@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+      <div
+        id="mobileMenu"
+        class="w-full h-screen fixed top-0 left-0 bg-[#020101] z-[999] p-6 -translate-y-full transition-transform duration-300 ease-in-out sm:hidden"
+      >
+        <div class="w-full flex justify-between items-center">
+          <a href="./index.html">
+            <img src="./assets/images/menuLogo.png" alt="" class="w-32" />
+          </a>
+          <img
+            id="menuCloseBtn"
+            src="./assets/svgs/crossIcon.svg"
+            alt=""
+            class="w-12"
+          />
+        </div>
+        <div
+          class="w-full flex flex-col text-2xl font-bold text-[#00D09A] pl-4 pt-8 gap-6 mt-5"
+        >
+          <a href="./index.html" class="text-[#00D09A] flex items-start gap-5">
+            <div class="w-5 h-5 shrink-0"></div>
+            Tree Services
+          </a>
+          <a
+            href="./yard.html"
+            class="text-[#00D09A] flex items-start gap-5 pr-40"
+          >
+            <div class="w-5 h-5 shrink-0"></div>
+            Yard & Property Services
+          </a>
+          <a
+            href="./hardscaping.html"
+            class="text-[#ffffff] flex items-start gap-5 pr-40"
+          >
+            <img
+              src="./assets/images/circleMenu.png"
+              alt=""
+              class="w-5 h-5 shrink-0 mt-2"
+            />
+            Hardscape & Construction
+          </a>
+        </div>
+        <div class="pl-12 mt-8 flex gap-3 items-center">
+          <img src="./assets/images/FbMenu.png" alt="" class="w-12" />
+          <img src="./assets/images/InstaMenu.png" alt="" class="w-12" />
+        </div>
+        <div class="pl-12 mt-5">
+          <a href="./contact.html">
+            <button
+              class="px-5 py-3 font-bold bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 text-white"
+            >
+              Get Free Estimate
+            </button>
+          </a>
+        </div>
+        <img
+          id="menuLeftLine"
+          src="./assets/images/leftLinemenu.png"
+          alt=""
+          class="absolute top-[100rem] left-12 transition-all duration-300 ease-in-out sm:hidden"
+        />
+      </div>
+      <!-- HEADER -->
+      <header
+        class="fixed top-0 left-0 right-0 w-full py-4 sm:py-5 px-4 sm:px-10 flex justify-between items-center z-[99]"
+      >
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo.png"
+            alt=""
+            class="headerLogo w-28 sm:w-40"
+          />
+        </a>
+        <div
+          class="headerMenu max-sm:hidden flex justify-end items-center gap-10 text-black"
+        >
+          <div class="headerMenuItem">
+            <a
+              href="./index.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Tree Services</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a
+              href="./yard.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Yard & Property Services</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a
+              href="./hardscaping.html"
+              class="text-[#00D09A] drop-shadow-[0_0_12px_#00D09A] [text-shadow:0_0_17px_#00D09A]"
+              >Hardscape & Construction</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a href="./contact.html">
+              <button
+                class="px-5 py-3 font-bold bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 hover:text-white"
+              >
+                Get Free Estimate
+              </button>
+            </a>
+          </div>
+        </div>
+        <div id="menuOpenBtn" class="sm:hidden">
+          <img src="./assets/images/hamburger.png" alt="" class="w-12" />
+        </div>
+      </header>
+      <!-- YARD SECTION 1 -->
+      <div
+        id="yardSection1Trigger"
+        class="w-full min-h-screen bg-white pt-32 sm:pt-44 relative"
+      >
+        <!-- The relative height deciding image -->
+        <img
+          src="./assets/images/yardMainBg.png"
+          alt=""
+          class="w-full relative max-sm:hidden"
+        />
+        <img
+          src="./assets/images/yardMainBgMobile.png"
+          alt=""
+          class="w-full relative sm:hidden"
+        />
+        <!-- The Content on Top -->
+        <div
+          class="w-full h-full top-0 left-0 absolute pt-[13rem] xs:pt-[15rem] sm:pt-[20rem] px-4 sm:px-32"
+        >
+          <div
+            class="w-full sm:w-[65%] text-white sm:p-20 flex flex-col gap-5 sm:gap-10"
+          >
+            <h1
+              style="line-height: 1.1"
+              class="yardSection1Heading max-sm:text-center font-bold sm:font-semibold text-2xl xs:text-3xl sm:text-7xl max-sm:leading-none!"
+            >
+              Custom Hardscaping & Professional Concrete Services
+            </h1>
+            <p
+              class="yardSection1Para max-sm:text-center text-base xs:text-lg sm:text-xl"
+            >
+              Transform your outdoor living space with durable, high-quality
+              construction. From elegant paver driveways to structural retaining
+              walls, we combine 16 years of experience with precision
+              craftsmanship to increase your property value and curb appeal in
+              Martinez, Concord, and beyond.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- YARD SECTION 2 -->
+      <div
+        id="yardSection2Trigger"
+        style="
+          background-image: url(&quot;./assets/images/yardSection2Gradeint.png&quot;);
+        "
+        class="w-full min-h-screen px-4 sm:px-16 relative text-[#020101] max-sm:overflow-hidden"
+      >
+        <img
+          src="./assets/images/svgLineGoingonTop.png"
+          alt=""
+          class="bigSvgLineGoing absolute -top-20 left-0 w-full h-full max-sm:hidden"
+        />
+        <div
+          class="relative w-full max-sm:flex-col flex justify-betweeen items-center py-5 sm:py-10 sm:translate-y-[-15rem] max-sm:gap-10"
+        >
+          <div
+            class="w-full sm:w-1/2 flex sm:h-[70dvh] flex-col gap-4 sm:gap-8 sm:pl-32 sm:pb-20 sm:justify-end max-sm:items-center"
+          >
+            <h2
+              class="yardSection2Part1Heading text-2xl sm:text-5xl font-bold sm:w-[80%] max-sm:text-center"
+            >
+              Interlocking Pavers & Custom Patios
+            </h2>
+            <p
+              class="yardSection2Part1Para text-sm sm:text-base sm:w-[73%] max-sm:text-center"
+            >
+              Upgrade your home’s entrance or backyard with premium pavers.
+              Unlike standard asphalt, interlocking pavers offer superior
+              durability and aesthetic flexibility. We design and install custom
+              driveways, walkways, and patios that can withstand heavy traffic
+              and shifting soil without cracking.
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 flex justify-center sm:jutsify-end">
+            <img
+              src="./assets/images/leaf1.png"
+              alt=""
+              class="yardSection2Part1LeafCard w-full sm:w-[85%]"
+            />
+          </div>
+        </div>
+        <div
+          class="relative w-full max-sm:flex-col-reverse flex justify-betweeen items-center py-5 sm:py-10 sm:translate-y-[-17rem] max-sm:gap-10"
+        >
+          <div class="w-full sm:w-1/2 flex justify-center sm:justify-end">
+            <img
+              src="./assets/images/leaf2.png"
+              alt=""
+              class="yardSection2Part2LeafCard w-full sm:w-[85%]"
+            />
+          </div>
+          <div
+            class="w-full sm:w-1/2 flex sm:h-[70dvh] flex-col gap-4 sm:gap-8 sm:pl-32 sm:pb-20 sm:justify-center max-sm:items-center"
+          >
+            <h2
+              class="yardSection2Part2Heading text-2xl sm:text-5xl font-bold sm:w-[80%] max-sm:text-center"
+            >
+              Professional Concrete Construction
+            </h2>
+            <p
+              class="yardSection2Part2Para text-sm sm:text-base sm:w-[73%] max-sm:text-center"
+            >
+              Whether you need a solid foundation for a new structure, a smooth
+              walkway, or a heavy-duty driveway, we deliver concrete work that
+              lasts. We handle the entire process, from excavation and grading
+              to the final smooth finish, ensuring proper drainage and
+              structural integrity.
+            </p>
+          </div>
+        </div>
+        <div
+          class="relative w-full max-sm:flex-col flex justify-betweeen items-center py-5 sm:py-10 sm:translate-y-[-25rem] max-sm:gap-10"
+        >
+          <div
+            class="w-full sm:w-1/2 flex sm:h-[70dvh] flex-col gap-4 sm:gap-8 sm:pl-32 sm:pb-20 sm:justify-end max-sm:items-center"
+          >
+            <h2
+              class="yardSection2Part3Heading text-2xl sm:text-5xl font-bold sm:w-[80%] max-sm:text-center"
+            >
+              Premium Artificial Turf Installation
+            </h2>
+            <p
+              class="yardSection2Part3Para text-sm sm:text-base sm:w-[73%] max-sm:text-center"
+            >
+              Create a perpetually green oasis that requires zero watering. Our
+              artificial turf installation is the perfect complement to
+              hardscaping, offering a soft, realistic, and pet-friendly surface
+              that stays vibrant all year round—even during California droughts.
+            </p>
+          </div>
+          <div class="w-full sm:w-1/2 flex justify-center sm:justify-end">
+            <img
+              src="./assets/images/leaf3.png"
+              alt=""
+              class="yardSection2Part3LeafCard w-full sm:w-[85%]"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- YARD SECTION 3 -->
+      <div id="yardSection3Trigger" class="w-full relative sm:-mt-[22rem]">
+        <div
+          class="w-full relative max-sm:bg-gradient-to-b max-sm:from-[#C0FFFB] max-sm:to-[#FFFFFF]"
+        >
+          <img
+            src="./assets/images/yardSecrion3.png"
+            alt=""
+            class="w-full max-sm:hidden"
+          />
+          <img
+            src="./assets/images/yardSection3Mobile.png"
+            alt=""
+            class="w-full sm:hidden"
+          />
+        </div>
+        <div
+          class="absolute top-0 left-0 w-full h-full flex justify-center items-center max-sm:px-4"
+        >
+          <div
+            class="w-full sm:w-[48%] flex flex-col items-center gap-6 px-4 sm:px-10 py-8 rounded-3xl bg-[#000000A3] backdrop-blur-md text-white"
+          >
+            <h1
+              style="line-height: 1.1"
+              class="yardSection3Heading text-center font-bold sm:font-semibold text-2xl sm:text-6xl max-sm:leading-none!"
+            >
+              Built to Last by an Owner-Operated Team
+            </h1>
+            <p
+              class="yardSection3Para text-center text-sm sm:text-xl sm:w-[79%]"
+            >
+              Hardscaping is an investment that should last for decades. Because
+              we are an owner-operated business, we personally oversee every
+              pour, every leveling, and every stone placement. We don't cut
+              corners on the base preparation—the most critical part of any
+              construction project.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR WORKS SECTION -->
+      <div
+        class="w-full relative pt-12 sm:pt-28 pb-10 flex flex-col justify-start items-center gap-5 sm:gap-8 z-[30] text-[#020101]"
+      >
+        <h2 class="font-bold text-3xl sm:text-5xl">Our Works</h2>
+        <div
+          class="carousel-wrapper w-full h-[65dvh] flex justify-start sm:justify-center items-center gap-8 overflow-hidden max-sm:overflow-x-auto"
+        >
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[95%] rounded-tr-[30px] rounded-br-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard1.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[-8deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[85%] rounded-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard2.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[10deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[85%] rounded-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard3.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[10deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[85%] rounded-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard4.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[10deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[95%] rounded-tl-[30px] rounded-bl-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard5.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[8deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+
+       <!-- FOOTER -->
+      <div id="footer" class="w-full min-h-screen relative">
+        <!-- Gradeint Image for footer Lenght -->
+        <img
+          src="./assets/images/gradientFooter.png"
+          alt=""
+          class="w-full relative max-sm:hidden"
+        />
+        <img
+          src="./assets/images/footerGradeintMobile.png"
+          alt=""
+          class="w-full relative sm:hidden"
+        />
+        <!-- Big Line on footer -->
+        <img
+          src="./assets/images/footerBigLine.png"
+          alt=""
+          class="footerBigLine w-full absolute top-0 left-0 max-sm:hidden"
+        />
+        <img
+          src="./assets/images/footerBigLineMobile.png"
+          alt=""
+          class="footerBigLine w-full absolute top-0 left-0 sm:hidden"
+        />
+        <!-- Footer Tree Image -->
+        <img
+          src="./assets/images/footerTree.png"
+          alt=""
+          class="footerTreeImage absolute bottom-0 left-0 max-sm:hidden"
+        />
+        <img
+          src="./assets/images/footerTreeMobile.png"
+          alt=""
+          class="footerTreeImage absolute bottom-0 left-0 sm:hidden"
+        />
+        <!-- Content On Top -->
+        <div
+          class="w-full h-full absolute top-0 left-0 flex flex-col justify-between px-4 sm:px-28 pb-4 sm:pb-12"
+        >
+          <div
+            class="flex max-sm:flex-col justify-start sm:justify-between items-center sm:items-end max-sm:gap-10"
+          >
+            <div
+              class="w-full sm:w-1/2 sm:p-2 flex flex-col text-[#020101] gap-6 sm:gap-10 max-sm:items-center"
+            >
+              <img
+                src="./assets/images/logo.png"
+                alt=""
+                class="footerLogo w-28 sm:w-72"
+              />
+              <h2
+                style="line-height: 1.1"
+                class="footerHeading text-2xl xs:text-3xl sm:text-6xl font-semibold w-[80%] max-sm:text-center"
+              >
+                Serving Martinez, Concord, and Beyond
+              </h2>
+              <p class="footerPara max-sm:text-sm w-[85%] max-sm:text-center">
+                We travel up to 100 miles to serve our community. Whether it's a
+                Sunday afternoon or a midnight emergency, I. Tomas Tree Services
+                is just a phone call away.
+              </p>
+              <div class="flex flex-col max-sm:items-center gap-3 sm:gap-6">
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerCall.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">925-497-5533</p>
+                </div>
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerEmail.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">agctomas@gmail.com</p>
+                </div>
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerClock.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">Monday to Sunday – 24/7</p>
+                </div>
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerTick.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">Free Estimates Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 sm:p-2 flex justify-center">
+              <form
+                action=""
+                class="w-full sm:w-[80%] backdrop-blur-sm bg-black/80 rounded-3xl py-6 sm:py-16 px-4 sm:px-8 flex flex-col text-xs xs:text-sm gap-2 xs:gap-4 items-center"
+              >
+                <h2
+                  class="footerFormHeading w-[70%] sm:w-[60%] text-center text-lg xs:text-2xl sm:text-3xl text-white"
+                >
+                  Get Your
+                  <span class="font-bold text-[#1DF8DC]"
+                    >Free Estimate Today!</span
+                  >
+                </h2>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="name" class="text-[#ffffff]"> Full Name </label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                  />
+                </div>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="name" class="text-[#ffffff]">
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    name="number"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                  />
+                </div>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="name" class="text-[#ffffff]"> Email </label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                  />
+                </div>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="message" class="text-[#ffffff]"> Message </label>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none resize-none"
+                  ></textarea>
+                </div>
+                <div class="footerFormBtn">
+                  <button
+                    class="px-6 py-4 mt-4 font-bold max-sm:text-sm text-[#031322] rounded-xl bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] transition-all duration-200 ease-out hover:-translate-y-2 hover:shadow-[0_10px_35px_rgba(29,248,220,0.45),0_0_25px_rgba(58,151,140,0.6)] active:translate-y-0"
+                  >
+                    Request a Free Quote
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="footerBottomDiv  w-full rounded-3xl py-4 sm:py-8 px-2 sm:px-5 bg-black/20 sm:bg-[#FFFFFF1A] backdrop-blur-lg flex justify-between text-xs text-white font-light max-sm:flex-col max-sm:text-center max-sm:items-center max-sm:gap-3"
+          >
+            <p>Privacy Policy &nbsp; | &nbsp; Your Privacy Choices</p>
+            <p>© 2025 I. TOMAS TREE SERVICE . All rights Reserved.</p>
+            <div class="flex gap-2 sm:gap-10 justify-center sm:justify-end">
+              <span>Web Design</span>
+              <a href="https://brandedstrong.com/"> By Branded Strong </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-sm:hidden absolute top-[2%] right-12 flex flex flex-col items-center gap-4"
+        >
+          <a href="https://www.facebook.com/" class="footersocialCircleBall">
+            <div
+              class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+            >
+              <img src="./assets/svgs/homeFb.svg" alt="" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/" class="footersocialCircleBall">
+            <div
+              class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+            >
+              <img src="./assets/svgs/homeInsta.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./serviceAnimation.js"></script>
+  </body>
+</html>

@@ -1,0 +1,318 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+      <div
+        id="mobileMenu"
+        class="w-full h-screen fixed top-0 left-0 bg-[#020101] z-[999] p-6 -translate-y-full transition-transform duration-300 ease-in-out sm:hidden"
+      >
+        <div class="w-full flex justify-between items-center">
+          <a href="./index.html">
+            <img src="./assets/images/menuLogo.png" alt="" class="w-32" />
+          </a>
+          <img
+            id="menuCloseBtn"
+            src="./assets/svgs/crossIcon.svg"
+            alt=""
+            class="w-12"
+          />
+        </div>
+        <div
+          class="w-full flex flex-col text-2xl font-bold text-[#00D09A] pl-4 pt-8 gap-6 mt-5"
+        >
+          <a href="./tree.html" class="text-[#00D09A] flex items-start gap-5">
+            <div class="w-5 h-5 shrink-0"></div>
+            Tree Services
+          </a>
+          <a
+            href="./yard.html"
+            class="text-[#00D09A] flex items-start gap-5 pr-40"
+          >
+            <div class="w-5 h-5 shrink-0"></div>
+            Yard & Property Services
+          </a>
+          <a
+            href="./hardscaping.html"
+            class="text-[#00D09A] flex items-start gap-5 pr-40"
+          >
+            <div class="w-5 h-5 shrink-0"></div>
+            Hardscape & Construction
+          </a>
+        </div>
+        <div class="pl-12 mt-8 flex gap-3 items-center">
+          <img src="./assets/images/FbMenu.png" alt="" class="w-12" />
+          <img src="./assets/images/InstaMenu.png" alt="" class="w-12" />
+        </div>
+        <div class="pl-12 mt-5">
+          <a href="./contact.html">
+            <button
+              class="px-5 py-3 font-bold bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 text-white"
+            >
+              Get Free Estimate
+            </button>
+          </a>
+        </div>
+        <img
+          id="menuLeftLine"
+          src="./assets/images/leftLinemenu.png"
+          alt=""
+          class="absolute top-[100rem] left-12 transition-all duration-300 ease-in-out sm:hidden"
+        />
+      </div>
+      <!-- HEADER -->
+      <header
+        class="fixed top-0 left-0 right-0 w-full py-4 sm:py-5 px-4 sm:px-10 flex justify-between items-center z-[99]"
+      >
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo.png"
+            alt=""
+            class="headerLogo w-28 sm:w-40"
+          />
+        </a>
+        <div
+          class="headerMenu max-sm:hidden flex justify-end items-center gap-10 text-black"
+        >
+          <div class="headerMenuItem">
+            <a
+              href="./tree.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Tree Services</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a
+              href="./yard.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Yard & Property Services</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a
+              href="./hardscaping.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Hardscape & Construction</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a href="./contact.html">
+              <button
+                class="px-5 py-3 font-bold bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 hover:text-white"
+              >
+                Get Free Estimate
+              </button>
+            </a>
+          </div>
+        </div>
+        <div id="menuOpenBtn" class="sm:hidden">
+          <img src="./assets/images/hamburger.png" alt="" class="w-12" />
+        </div>
+      </header>
+      <div class="w-full h-full pt-32 xs:pt-36 sm:pt-60">
+        <!-- FOOTER -->
+        <div id="footer" class="w-full min-h-screen relative">
+          <!-- Gradeint Image for footer Lenght -->
+          <img
+            src="./assets/images/gradientFooter.png"
+            alt=""
+            class="w-full relative max-sm:hidden"
+          />
+          <img
+            src="./assets/images/footerGradeintMobile.png"
+            alt=""
+            class="w-full relative sm:hidden"
+          />
+          <!-- Big Line on footer -->
+          <img
+            src="./assets/images/footerBigLine.png"
+            alt=""
+            class="footerBigLine w-full absolute top-0 left-0 max-sm:hidden"
+          />
+          <img
+            src="./assets/images/footerBigLineMobile.png"
+            alt=""
+            class="footerBigLine w-full absolute top-0 left-0 sm:hidden"
+          />
+          <!-- Footer Tree Image -->
+          <img
+            src="./assets/images/footerTree.png"
+            alt=""
+            class="footerTreeImage absolute bottom-0 left-0 max-sm:hidden"
+          />
+          <img
+            src="./assets/images/footerTreeMobile.png"
+            alt=""
+            class="footerTreeImage absolute bottom-0 left-0 sm:hidden"
+          />
+          <!-- Content On Top -->
+          <div
+            class="w-full h-full absolute top-0 left-0 flex flex-col justify-between px-4 sm:px-28 pb-4 sm:pb-12"
+          >
+            <div
+              class="flex max-sm:flex-col justify-start sm:justify-between items-center sm:items-end max-sm:gap-10"
+            >
+              <div
+                class="w-full sm:w-1/2 sm:p-2 flex flex-col text-[#020101] gap-6 sm:gap-10 max-sm:items-center"
+              >
+                <img
+                  src="./assets/images/logo.png"
+                  alt=""
+                  class="footerLogo w-28 sm:w-72"
+                />
+                <h2
+                  style="line-height: 1.1"
+                  class="footerHeading text-2xl xs:text-3xl sm:text-6xl font-semibold w-[80%] max-sm:text-center"
+                >
+                  Serving Martinez, Concord, and Beyond
+                </h2>
+                <p class="footerPara max-sm:text-sm w-[85%] max-sm:text-center">
+                  We travel up to 100 miles to serve our community. Whether it's
+                  a Sunday afternoon or a midnight emergency, I. Tomas Tree
+                  Services is just a phone call away.
+                </p>
+                <div class="flex flex-col max-sm:items-center gap-3 sm:gap-6">
+                  <div class="footerInfo flex gap-2 items-center text-lg">
+                    <img
+                      src="./assets/svgs/footerCall.svg"
+                      alt=""
+                      class="w-5 sm:w-7"
+                    />
+                    <p class="max-sm:text-sm">925-497-5533</p>
+                  </div>
+                  <div class="footerInfo flex gap-2 items-center text-lg">
+                    <img
+                      src="./assets/svgs/footerEmail.svg"
+                      alt=""
+                      class="w-5 sm:w-7"
+                    />
+                    <p class="max-sm:text-sm">agctomas@gmail.com</p>
+                  </div>
+                  <div class="footerInfo flex gap-2 items-center text-lg">
+                    <img
+                      src="./assets/svgs/footerClock.svg"
+                      alt=""
+                      class="w-5 sm:w-7"
+                    />
+                    <p class="max-sm:text-sm">Monday to Sunday – 24/7</p>
+                  </div>
+                  <div class="footerInfo flex gap-2 items-center text-lg">
+                    <img
+                      src="./assets/svgs/footerTick.svg"
+                      alt=""
+                      class="w-5 sm:w-7"
+                    />
+                    <p class="max-sm:text-sm">Free Estimates Available</p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-full sm:w-1/2 sm:p-2 flex justify-center">
+                <form
+                  action=""
+                  class="w-full sm:w-[80%] backdrop-blur-sm bg-black/80 rounded-3xl py-6 sm:py-16 px-4 sm:px-8 flex flex-col text-xs xs:text-sm gap-2 xs:gap-4 items-center"
+                >
+                  <h2
+                    class="footerFormHeading w-[70%] sm:w-[60%] text-center text-lg xs:text-2xl sm:text-3xl text-white"
+                  >
+                    Get Your
+                    <span class="font-bold text-[#1DF8DC]"
+                      >Free Estimate Today!</span
+                    >
+                  </h2>
+                  <div class="formInputField flex flex-col xs:gap-1 w-full">
+                    <label for="name" class="text-[#ffffff]"> Full Name </label>
+                    <input
+                      type="text"
+                      name="name"
+                      class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                    />
+                  </div>
+                  <div class="formInputField flex flex-col xs:gap-1 w-full">
+                    <label for="name" class="text-[#ffffff]">
+                      Phone Number
+                    </label>
+                    <input
+                      type="text"
+                      name="number"
+                      class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                    />
+                  </div>
+                  <div class="formInputField flex flex-col xs:gap-1 w-full">
+                    <label for="name" class="text-[#ffffff]"> Email </label>
+                    <input
+                      type="email"
+                      name="email"
+                      class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                    />
+                  </div>
+                  <div class="formInputField flex flex-col xs:gap-1 w-full">
+                    <label for="message" class="text-[#ffffff]">
+                      Message
+                    </label>
+                    <textarea
+                      name="message"
+                      rows="4"
+                      class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none resize-none"
+                    ></textarea>
+                  </div>
+                  <div class="footerFormBtn">
+                    <button
+                      class="px-6 py-4 mt-4 font-bold max-sm:text-sm text-[#031322] rounded-xl bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] transition-all duration-200 ease-out hover:-translate-y-2 hover:shadow-[0_10px_35px_rgba(29,248,220,0.45),0_0_25px_rgba(58,151,140,0.6)] active:translate-y-0"
+                    >
+                      Request a Free Quote
+                    </button>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div
+              class="w-full rounded-3xl py-4 sm:py-8 px-2 sm:px-5 bg-black/20 sm:bg-[#FFFFFF1A] backdrop-blur-lg flex justify-between text-xs text-white font-light max-sm:flex-col max-sm:text-center max-sm:items-center max-sm:gap-3"
+            >
+              <p>Privacy Policy &nbsp; | &nbsp; Your Privacy Choices</p>
+              <p>© 2025 I. TOMAS TREE SERVICE . All rights Reserved.</p>
+              <div class="flex gap-2 sm:gap-10 justify-center sm:justify-end">
+                <span>Web Design</span>
+                <a href="https://brandedstrong.com/"> By Branded Strong </a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="max-sm:hidden absolute top-[2%] right-12 flex flex flex-col items-center gap-4"
+          >
+            <a href="https://www.facebook.com/" class="socialCircleBall">
+              <div
+                class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+              >
+                <img src="./assets/svgs/homeFb.svg" alt="" />
+              </div>
+            </a>
+            <a href="https://www.instagram.com/" class="socialCircleBall">
+              <div
+                class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+              >
+                <img src="./assets/svgs/homeInsta.svg" alt="" />
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./contactAnimation.js"></script>
+  </body>
+</html>

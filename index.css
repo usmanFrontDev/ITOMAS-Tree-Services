@@ -1,0 +1,33 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+     font-family: "Inter", sans-serif;
+
+}
+
+
+.Int{
+     font-family: "Inter", sans-serif;
+}
+
+
+  .carousel-wrapper {
+            perspective: 10000px;
+            perspective-origin: center center;
+            overflow: hidden;
+        }
+
+        .carousel-card {
+            overflow: hidden;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            transform-style: preserve-3d;
+        }
+
+    
+        .carousel-card:first-child {
+            transform: perspective(800px) rotateY(15deg) ;
+        }
+        .carousel-card:last-child {
+            transform: perspective(800px) rotateY(-15deg) ;
+        }

@@ -1,0 +1,1029 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./index.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <div class="main w-full h-full overflow-hidden">
+      <!-- MENU -->
+      <div
+        id="mobileMenu"
+        class="w-full h-screen fixed top-0 left-0 bg-[#020101] z-[999] p-6 -translate-y-full transition-transform duration-300 ease-in-out sm:hidden"
+      >
+        <div class="w-full flex justify-between items-center">
+          <a href="./index.html">
+            <img src="./assets/images/menuLogo.png" alt="" class="w-32" />
+          </a>
+          <img
+            id="menuCloseBtn"
+            src="./assets/svgs/crossIcon.svg"
+            alt=""
+            class="w-12"
+          />
+        </div>
+        <div
+          class="w-full flex flex-col text-2xl font-bold text-[#00D09A] pl-4 pt-8 gap-6 mt-5"
+        >
+          <a href="./tree.html" class="text-[#00D09A] flex items-start gap-5">
+            <div class="w-5 h-5 shrink-0"></div>
+            Tree Services
+          </a>
+          <a
+            href="./yard.html"
+            class="text-[#00D09A] flex items-start gap-5 pr-40"
+          >
+            <div class="w-5 h-5 shrink-0"></div>
+            Yard & Property Services
+          </a>
+          <a
+            href="./hardscaping.html"
+            class="text-[#00D09A] flex items-start gap-5 pr-40"
+          >
+            <div class="w-5 h-5 shrink-0"></div>
+            Hardscape & Construction
+          </a>
+        </div>
+        <div class="pl-12 mt-8 flex gap-3 items-center">
+          <img src="./assets/images/FbMenu.png" alt="" class="w-12" />
+          <img src="./assets/images/InstaMenu.png" alt="" class="w-12" />
+        </div>
+        <div class="pl-12 mt-5">
+          <a href="./contact.html">
+            <button
+              class="px-5 py-3 font-bold bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 text-white"
+            >
+              Get Free Estimate
+            </button>
+          </a>
+        </div>
+        <img
+          id="menuLeftLine"
+          src="./assets/images/leftLinemenu.png"
+          alt=""
+          class="absolute top-[100rem] left-12 transition-all duration-300 ease-in-out sm:hidden"
+        />
+      </div>
+      <!-- HEADER -->
+      <header
+        class="fixed top-0 left-0 right-0 w-full py-4 sm:py-5 px-4 sm:px-10 flex justify-between items-center z-[99]"
+      >
+        <a href="./index.html">
+          <img
+            src="./assets/images/logo.png"
+            alt=""
+            class="headerLogo w-28 sm:w-40"
+          />
+        </a>
+        <div
+          class="headerMenu max-sm:hidden flex justify-end items-center gap-10 text-black"
+        >
+          <div class="headerMenuItem">
+            <a
+              href="./tree.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Tree Services</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a
+              href="./yard.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Yard & Property Services</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a
+              href="./hardscaping.html"
+              class="transition-all duration-150 ease-out hover:text-[#00D09A] hover:drop-shadow-[0_0_12px_#00D09A] hover:[text-shadow:0_0_17px_#00D09A]"
+              >Hardscape & Construction</a
+            >
+          </div>
+          <div class="headerMenuItem">
+            <a href="./contact.html">
+              <button
+                class="px-5 py-3 font-bold bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 hover:text-white"
+              >
+                Get Free Estimate
+              </button>
+            </a>
+          </div>
+        </div>
+        <div id="menuOpenBtn" class="sm:hidden">
+          <img src="./assets/images/hamburger.png" alt="" class="w-12" />
+        </div>
+      </header>
+      <!-- HOME SECTION 1 -->
+      <div
+        id="homeSection1Trigger"
+        class="w-full min-h-screen relative overflow-hidden"
+      >
+        <!-- Gradeint Image Relative One-->
+        <img
+          src="./assets/images/gradeintHomeSectionFrombelow.png"
+          alt=""
+          class="relative w-full max-sm:hidden"
+        />
+        <img
+          src="./assets/images/gradeintMobile.png"
+          alt=""
+          class="relative w-full sm:hidden"
+        />
+        <!-- Tree Image Absolute One-->
+        <div class="w-full absolute bottom-0 left-0">
+          <img
+            src="./assets/images/treeAbsoluteImageHomeSec1.png"
+            alt=""
+            class="homeSection1TreeImage w-full max-sm:hidden"
+          />
+          <img
+            src="./assets/images/treeMobile.png"
+            alt=""
+            class="homeSection1TreeImage w-full sm:hidden"
+          />
+          <!-- Overlay Div -->
+          <div
+            class="absolute inset-0 flex items-center justify-between sm:justify-center max-sm:flex-col max-sm:px-4"
+          >
+            <div
+              class="w-full sm:w-1/2 h-full p-4 flex sm:flex-col items-start sm:items-end justify-between sm:py-52 sm:pr-60"
+            >
+              <div
+                class="homeSectionChip rounded-full px-3 sm:px-10 py-2 sm:py-5 max-sm:text-[0.6rem] text-white backdrop-blur-xl bg-black/60 border border-white/20 shadow-[inset_0_2px_6px_rgba(255,255,255,0.15),inset_0_-2px_6px_rgba(0,0,0,0.25),0_8px_25px_rgba(0,0,0,0.25)]"
+              >
+                Owner-Operated Business
+              </div>
+              <div
+                class="homeSectionChip max-sm:mt-5 rounded-full px-3 sm:px-10 py-2 sm:py-5 max-sm:text-[0.6rem] text-white backdrop-blur-xl bg-black/60 border border-white/20 shadow-[inset_0_2px_6px_rgba(255,255,255,0.15),inset_0_-2px_6px_rgba(0,0,0,0.25),0_8px_25px_rgba(0,0,0,0.25)]"
+              >
+                Available 24/7
+              </div>
+            </div>
+            <div
+              class="w-full sm:w-1/2 p-4 h-full inset-0 flex sm:flex-col items-start justify-end sm:justify-center sm:pl-52"
+            >
+              <div
+                class="homeSectionChip rounded-full px-3 sm:px-10 py-2 sm:py-5 max-sm:text-[0.6rem] text-white backdrop-blur-xl bg-black/60 border border-white/20 shadow-[inset_0_2px_6px_rgba(255,255,255,0.15),inset_0_-2px_6px_rgba(0,0,0,0.25),0_8px_25px_rgba(0,0,0,0.25)]"
+              >
+                Serving Martinez, Concord & 100-Mile Radius
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Scratch Image Absolute Two-->
+        <img
+          src="./assets/images/bottomScartchAbsoluteImageHomeSec1.png"
+          alt=""
+          class="homeSection1ScratchImage w-full absolute -bottom-2 left-0 max-sm:hidden"
+        />
+        <img
+          src="./assets/images/scratchMobile.png"
+          alt=""
+          class="homeSection1ScratchImage w-full absolute bottom-0 left-0 sm:hidden"
+        />
+        <div
+          class="w-full h-full absolute top-0 left-0 flex flex-col items-center justify-start pt-40 xs:pt-44 sm:pt-60 max-sm:px-4"
+        >
+          <div
+            class="w-[90%] sm:w-1/2 flex flex-col items-center justify-start text-[#020101] gap-5"
+          >
+            <h1
+              style="line-height: 1.2"
+              class="homeSection1Heading text-center font-bold sm:font-semibold text-2xl xs:text-3xl sm:text-7xl max-sm:leading-none!"
+            >
+              Expert Tree Care & Custom Hardscaping: 16 Years of Excellence
+            </h1>
+            <p
+              class="homeSection1Para text-center text-sm xs:text-base sm:text-3xl"
+            >
+              From emergency tree removal to installing beautiful pavers and
+              artificial turf. We are your trusted, owner-operated partners for
+              all outdoor projects in California.
+            </p>
+            <div
+              class="flex justify-center items-center gap-5 sm:gap-10 mt-4 max-sm:flex-col"
+            >
+              <div class="homeSection1Btn">
+                <button
+                  class="px-6 py-4 font-bold max-sm:text-sm bg-white rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 flex gap-2 items-center"
+                >
+                  <img src="./assets/svgs/btnPhone.svg" alt="" class="w-5" />
+                  Call 925-497-5533
+                </button>
+              </div>
+              <div class="homeSection1Btn">
+                <button
+                  class="px-6 py-4 font-bold max-sm:text-sm bg-[#00D09A] rounded-md transition-all duration-150 ease-out hover:-translate-y-2 hover:shadow-[0_0_25px_rgba(0,208,154,0.8)] active:translate-y-0 hover:text-white"
+                >
+                  Request a Free Quote
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-sm:hidden absolute top-[30%] right-12 flex flex flex-col items-center gap-4"
+        >
+          <a href="https://www.facebook.com/" class="socialCircleBall">
+            <div
+              class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+            >
+              <img src="./assets/svgs/homeFb.svg" alt="" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/" class="socialCircleBall">
+            <div
+              class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+            >
+              <img src="./assets/svgs/homeInsta.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <!-- section2wrapper -->
+      <div
+        id="homesection2Trigger"
+        class="w-full sm:overflow-hidden flex flex-col max-sm:gap-5 sm:pt-10 relative z-[20]"
+      >
+        <!-- homesection2top -->
+        <div
+          class="homesection2top relative w-full flex flex-col sm:flex-row items-center justify-center"
+        >
+          <img
+            class="homesection2rightbgimg absolute w-full sm:w-[50%] 2xl:w-[53%] right-0 sm:top-[43%] 2xl:top-[46%] sm:-translate-y-1/2 z-[0] max-sm:bottom-10 max-sm:pl-2"
+            src="./assets/images/homesection2rightbg.png"
+            alt=""
+          />
+          <div
+            class="topleftcontent px-8 sm:px-44 flex flex-col sm:flex-row gap-6 sm:gap-4 2xl:gap-0 items-stretch relative z-[1]"
+          >
+            <div
+              class="w-full sm:w-[50%] flex flex-col justify-center gap-2 sm:gap-4"
+            >
+              <h1
+                style="line-height: 1.2"
+                class="topheading text-2xl sm:text-5xl text-[#020101] font-bold text-center sm:text-start leading-none"
+              >
+                Dedicated to Safety, Quality, and Efficiency Since 2008
+              </h1>
+              <p
+                class="topleftpara text-center sm:text-start text-xs sm:text-base text-[#020101] w-full sm:w-[90%]"
+              >
+                When you hire I. Tomas Tree Services, you aren't just hiring a
+                company; you are hiring a dedicated owner-operated team with
+                over 16 years of hands-on experience. We understand that tree
+                emergencies don't stick to a schedule, which is why we are
+                available 24 hours a day, 7 days a week.
+              </p>
+            </div>
+            <div class="homesection2right w-full sm:w-[48%]">
+              <img
+                class="rightimg"
+                src="./assets/images/homesection2img.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <!-- homesection2bottom -->
+        <div
+          class="homesection2bottomcards sm:px-44 px-4 w-full items-stretch flex flex-col sm:flex-row gap-4 sm:gap-10 sm:-translate-y-14 2xl:-translate-y-20 relative z-[2]"
+        >
+          <!-- card1 -->
+          <div
+            class="card1 bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] w-fit text-[#FFFFFF] sm:px-9 px-5 2xl:px-14 py-7 rounded-2xl flex flex-col gap-3 sm:gap-5 max-sm:w-full max-sm:items-center"
+          >
+            <h1
+              class="card1heading text-3xl font-bold leading-none hidden sm:block"
+            >
+              100% <br />
+              Owner- <br />Operated
+            </h1>
+            <h1
+              class="card1heading text-2xl font-bold leading-none block sm:hidden text-center"
+            >
+              100% Owner-Operated
+            </h1>
+            <p class="card1para text-sm leading-none hidden sm:block">
+              Direct accountability <br />
+              on every job.
+            </p>
+            <p class="card1para text-sm leading-none sm:hidden text-center">
+              Direct accountability on every job.
+            </p>
+          </div>
+          <!-- card2 -->
+          <div
+            class="card2 bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] w-fit text-[#FFFFFF] sm:px-9 px-4 py-7 2xl:px-14 rounded-2xl flex flex-col gap-3 sm:gap-5 max-sm:w-full max-sm:items-center"
+          >
+            <h1
+              class="card2heading text-3xl font-bold leading-none hidden sm:block"
+            >
+              24/7 <br />
+              Emergency <br />Service
+            </h1>
+            <h1
+              class="card2heading text-2xl font-bold leading-none sm:hidden text-center"
+            >
+              24/7 Emergency <br />Service
+            </h1>
+            <p class="card2para text-sm leading-none hidden sm:block">
+              We are ready when you <br />need us most.
+            </p>
+            <p
+              class="card2para text-sm leading-none block sm:hidden text-center"
+            >
+              We are ready when you need us most.
+            </p>
+          </div>
+          <!-- card3 -->
+          <div
+            class="card3 bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] w-fit text-[#FFFFFF] sm:px-9 px-3 py-7 2xl:px-14 rounded-2xl flex flex-col gap-5 justify-center max-sm:w-full max-sm:items-center"
+          >
+            <h1
+              class="card3heading text-2xl sm:text-3xl font-bold leading-none text-center sm:text-start"
+            >
+              Comprehensive <br />
+              Care
+            </h1>
+            <p class="card3para text-sm leading-none hidden sm:block">
+              From tall trees to concrete <br />
+              foundations.
+            </p>
+            <p class="card3para text-sm leading-none sm:hidden text-center">
+              From tall trees to concrete foundations.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-- section 3 and 4 wrapper -->
+      <div
+        class=" flex flex-col pt-4 sm:pt-12 sm:gap-14 bg-[linear-gradient(to_bottom,#FFFFFF_0%,#A9FFFB_84%,#ffffff_70%,#ffffff_100%)]"
+      >
+        <!-- homesection3 -->
+        <div
+          id="homesection3Trigger"
+          class=" px-4 sm:px-20 flex flex-col gap-5 sm:gap-16 max-sm:pt-5"
+        >
+          <!-- section3top -->
+          <div
+            class="section3topcontent w-full px-0 sm:px-14 items-center flex flex-col sm:flex-row h-fit justify-between gap-2 sm:gap-0"
+          >
+            <h1
+              class="section3topheading text-2xl sm:text-5xl font-bold w-full sm:w-[25%] text-[#020101] text-center sm:text-start max-sm:leading-tight"
+            >
+              Complete Tree & Yard Maintenance
+            </h1>
+            <p
+              class="section3toppara text-sm sm:text-2xl font-medium w-full sm:w-[20%] sm:leading-none text-center sm:text-start"
+            >
+              Keep your property
+              <span
+                class="bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] bg-clip-text text-transparent font-bold"
+                >safe and beautiful</span
+              >
+              with our specialized tree care.
+            </p>
+          </div>
+          <!-- homesection3bottom -->
+          <div
+            class="sm:overflow-hidden homesection3bottomcards w-full flex gap-5 sm:gap-4 justify-between overflow-x-auto max-xs:px-0 max-sm:px-4"
+          >
+            <!-- card1 -->
+            <div
+              class="card1 max-sm:min-w-full sm:w-[32%] p-6 rounded-3xl h-[68dvh] sm:h-[80dvh] flex flex-col justify-end items-start gap-4 relative overflow-hidden group"
+            >
+              <!-- background image -->
+              <img
+                src="./assets/images/homesection3card1img.png"
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+              />
+
+              <!-- gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/10 to-black/90"
+              ></div>
+
+              <!-- content -->
+              <div
+                class="relative flex flex-col gap-2 text-white p-2 sm:px-5 group-hover:-translate-y-10 transition-all duration-300"
+              >
+                <h2
+                  class="text-xl sm:text-3xl font-bold sm:w-[80%] text-center sm:text-start leading-none"
+                >
+                  Tree Trimming & Cleaning
+                </h2>
+                <p
+                  class="text-xs sm:text-sm leading-none w-full sm:w-[95%] pb-2 sm:pb-6 text-center sm:text-start"
+                >
+                  Promote healthy growth and curb appeal. We expertly shape your
+                  trees and remove deadwood to prevent future hazards.
+                </p>
+                <button
+                  class="w-full flex justify-end gap-2 max-sm:justify-center"
+                >
+                  Ver más <img src="./assets/svgs/section3card.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div
+              class="card2 max-sm:min-w-full sm:w-[32%] p-6 rounded-3xl h-[68dvh] sm:h-[80dvh] flex flex-col justify-end items-start gap-4 relative overflow-hidden group transition-all duration-300"
+            >
+              <!-- background image -->
+              <img
+                src="./assets/images/homesection3card1img2.png"
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+              />
+
+              <!-- gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/10 to-black/70"
+              ></div>
+
+              <!-- content -->
+              <div
+                class="relative flex flex-col gap-2 text-white p-2 sm:px-5 group-hover:-translate-y-10 transition-all duration-300"
+              >
+                <h2
+                  class="text-xl sm:text-3xl font-bold sm:w-[80%] text-center sm:text-start leading-none"
+                >
+                  Removal & Stump Grinding
+                </h2>
+                <p
+                  class="text-xs sm:text-sm leading-no w-full sm:ne w-[95%] pb-2 sm:pb-6 text-center sm:text-start"
+                >
+                  Safe removal of hazardous or unwanted trees. We grind stumps
+                  below the surface to leave your yard ready for its next
+                  project
+                </p>
+                <button
+                  class="w-full flex justify-end gap-2 max-sm:justify-center"
+                >
+                  Ver más <img src="./assets/svgs/section3card.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div
+              class="card3 max-sm:min-w-full sm:w-[32%] p-6 rounded-3xl h-[68dvh] sm:h-[80dvh] flex flex-col justify-end items-start gap-4 relative overflow-hidden group transition-all duration-300"
+            >
+              <!-- background image -->
+              <img
+                src="./assets/images/homesection3card1img3.png"
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+              />
+
+              <!-- gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/10 to-black/70"
+              ></div>
+
+              <!-- content -->
+              <div
+                class="relative flex flex-col gap-2 text-white p-2 sm:px-5 group-hover:-translate-y-10 transition-all duration-300"
+              >
+                <h2
+                  class="text-xl sm:text-3xl font-bold sm:w-[80%] text-center sm:text-start leading-none"
+                >
+                  Yard Cleaning & Hauling
+                </h2>
+                <p
+                  class="text-xs sm:text-sm leading-no w-full sm:ne w-[95%] pb-2 sm:pb-6 text-center sm:text-start"
+                >
+                  Don't let debris pile up. We provide thorough yard cleanup and
+                  debris hauling to reclaim your outdoor space.
+                </p>
+                <button
+                  class="w-full flex justify-end gap-2 max-sm:justify-center"
+                >
+                  Ver más <img src="./assets/svgs/section3card.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- homesection4 -->
+        <div
+          id="homesection4Trigger"
+          class="px-4 sm:px-20 flex flex-col gap-5 sm:gap-16 max-sm:pt-12 sm:pt-10"
+        >
+          <!-- section4top -->
+          <div
+            class="section4content w-full px-0 sm:px-14 items-center flex flex-col sm:flex-row h-fit justify-between gap-3 sm:gap-0"
+          >
+            <h1
+              class="section4heading text-2xl sm:text-5xl font-bold w-full sm:w-[30%] text-[#020101] text-center sm:text-start max-sm:leading-tight"
+            >
+              Transform Your Landscape with Hardscaping
+            </h1>
+            <p
+              class="section4para text-sm sm:text-2xl font-medium w-full sm:w-[24%] sm:leading-none text-center sm:text-start"
+            >
+              Durable,
+              <span
+                class="bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] bg-clip-text text-transparent font-bold"
+                >high-quality construction
+              </span>
+              for driveways, patios, and walls.
+            </p>
+          </div>
+          <!-- homesection4bottom -->
+          <div
+            class="sm:overflow-hidden homesection4bottomcards w-full flex gap-5 sm:gap-4 justify-between overflow-x-auto max-xs:px-0 max-sm:px-4"
+          >
+            <!-- card1 -->
+            <div
+              class="card1 max-sm:min-w-full sm:w-[32%] p-6 rounded-3xl h-[68dvh] sm:h-[80dvh] flex flex-col justify-end items-start gap-4 relative overflow-hidden group transition-all duration-300"
+            >
+              <!-- background image -->
+              <img
+                src="./assets/images/homesection4card1img.png"
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+              />
+
+              <!-- gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/10 to-black/90"
+              ></div>
+
+              <!-- content -->
+              <div
+                class="relative flex flex-col gap-2 text-white p-2 sm:px-5 group-hover:-translate-y-10 transition-all duration-300"
+              >
+                <h2
+                  class="text-xl sm:text-3xl font-bold sm:w-[80%] text-center sm:text-start leading-none"
+                >
+                  Pavers & Retaining Walls
+                </h2>
+                <p
+                  class="text-xs sm:text-sm leading-none w-full sm:w-[95%] pb-2 sm:pb-6 text-center sm:text-start"
+                >
+                  Upgrade your driveway or patio with high-quality pavers. We
+                  build sturdy retaining walls that combine function with
+                  elegance.
+                </p>
+                <button
+                  class="w-full flex justify-end gap-2 max-sm:justify-center"
+                >
+                  Ver más <img src="./assets/svgs/section3card.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <!-- card2 -->
+            <div
+              class="card2 max-sm:min-w-full sm:w-[32%] p-6 rounded-3xl h-[68dvh] sm:h-[80dvh] flex flex-col justify-end items-start gap-4 relative overflow-hidden group transition-all duration-300"
+            >
+              <!-- background image -->
+              <img
+                src="./assets/images/homesection4card2img.png"
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+              />
+
+              <!-- gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/10 to-black/70"
+              ></div>
+
+              <!-- content -->
+              <div
+                class="relative flex flex-col gap-2 text-white p-2 sm:px-5 group-hover:-translate-y-10 transition-all duration-300"
+              >
+                <h2
+                  class="text-xl sm:text-3xl font-bold sm:w-[80%] text-center sm:text-start leading-none"
+                >
+                  Professional Concrete Work
+                </h2>
+                <p
+                  class="text-xs sm:text-sm leading-none w-full sm:w-[95%] pb-2 sm:pb-6 text-center sm:text-start"
+                >
+                  From foundations to walkways, we deliver smooth, durable
+                  concrete solutions designed to withstand the California
+                  elements
+                </p>
+                <button
+                  class="w-full flex justify-end gap-2 max-sm:justify-center"
+                >
+                  Ver más <img src="./assets/svgs/section3card.png" alt="" />
+                </button>
+              </div>
+            </div>
+            <!-- card3 -->
+            <div
+              class="card3 max-sm:min-w-full sm:w-[32%] p-6 rounded-3xl h-[68dvh] sm:h-[80dvh] flex flex-col justify-end items-start gap-4 relative overflow-hidden group transition-all duration-300"
+            >
+              <!-- background image -->
+              <img
+                src="./assets/images/homesection4card3img.png"
+                alt=""
+                class="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-300"
+              />
+
+              <!-- gradient overlay -->
+              <div
+                class="absolute inset-0 bg-gradient-to-b from-white/10 to-black/70"
+              ></div>
+
+              <!-- content -->
+              <div
+                class="relative flex flex-col gap-2 text-white p-2 sm:px-5 group-hover:-translate-y-10 transition-all duration-300"
+              >
+                <h2
+                  class="text-xl sm:text-3xl font-bold sm:w-[80%] text-center sm:text-start leading-none"
+                >
+                  Artificial Turf Installation
+                </h2>
+                <p
+                  class="text-xs sm:text-sm leading-none w-full sm:w-[95%] pb-2 sm:pb-6 text-center sm:text-start"
+                >
+                  Enjoy a perfect green lawn all year round without the water
+                  bill. Low maintenance, pet-friendly, and always vibrant
+                </p>
+                <button
+                  class="w-full flex justify-end gap-2 max-sm:justify-center"
+                >
+                  Ver más <img src="./assets/svgs/section3card.png" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- OUR WORKS SECTION -->
+      <div
+        class="w-full relative pt-12 sm:pt-28 pb-10 flex flex-col justify-start items-center gap-5 sm:gap-8 z-[30] text-[#020101]"
+      >
+        <h2 class="font-bold text-3xl sm:text-5xl">Our Works</h2>
+        <div
+          class="carousel-wrapper w-full h-[65dvh] flex justify-start sm:justify-center items-center gap-8 overflow-hidden max-sm:overflow-x-auto"
+        >
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[95%] rounded-tr-[30px] rounded-br-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard1.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[-8deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[85%] rounded-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard2.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[10deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[85%] rounded-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard3.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[10deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[85%] rounded-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard4.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[10deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+          <div
+            class="carousel-card overflow-hidden min-w-[260px] h-[95%] rounded-tl-[30px] rounded-bl-[30px]"
+          >
+            <img
+              src="./assets/images/carousalCard5.jpg"
+              alt=""
+              class="w-full h-full object-cover hover:scale-125 hover:rotate-[8deg] transition ease-in-out duration-200 cursor-pointer"
+            />
+          </div>
+        </div>
+      </div>
+
+      <!-- reviews -->
+      <div
+        id="reviewsTrigger"
+        class="w-full h-fit pt-10 sm:pt-10 px-4 sm:px-20 flex flex-col gap-10 pb-10 sm:pb-28"
+      >
+        <!-- reviwstop -->
+        <div class="reviwstop pl-0 sm:pl-10 flex items-center flex-col gap-2">
+          <h1
+            class="reviwstopheading text-xl sm:text-4xl font-bold text-[#020101]"
+          >
+            What Our Clients Are Saying
+          </h1>
+          <div
+            class="reviwstoppara flex items-center justify-between w-fit gap-2"
+          >
+            <img class="w-20 sm:w-28" src="./assets/svgs/rating.svg" alt="" />
+            <h1 class="font-medium text-xs sm:text-sm text-[#020101]">
+              5.0 rating of 12 reviews
+            </h1>
+          </div>
+        </div>
+        <!-- reviewsbottom -->
+        <div
+          class="reviewsbottom w-full flex flex-col sm:flex-row justify-evenly 2xl:justify-center gap-5 2xl:gap-10 items-center sm:items-stretch"
+        >
+          <!-- review1 -->
+          <div
+            class="review1 w-full sm:w-[30%] 2xl:w-[27%] rounded-2xl flex flex-col items-center justify-between px-3 py-6 gap-2 sm:gap-3 2xl:gap-5 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/google.svg" alt="" />
+            </div>
+            <p class="w-full h-fit text-xs sm:text-base Int text-[#020101]">
+              The best service I’ve received in a long time! The team was
+              incredibly responsive, and their expertise was evident in the
+              final product. There was a small miscommunication initially, but
+              they quickly resolved it. I would definitely work with them again.
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1 class="font-semibold text-lg sm:text-xl text-[#020101]">
+                Isabella Turner
+              </h1>
+              <p class="text-[#7C7C7C] Int text-sm">Project Manager</p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/images/userprofile.png"
+                alt=""
+              />
+            </div>
+          </div>
+          <!-- review2 -->
+          <div
+            style="background-image: url(assets/images/reviewbg.png)"
+            class="review1 relative w-full sm:w-[30%] 2xl:w-[27%] max-sm:h-[380px] bg-[#F9FAFB] rounded-2xl flex flex-col items-center justify-end px-5 py-6 gap-2 sm:gap-3 bg-img bg-cover bg-center flex-shrink-0 2xl:gap-5 border border-[#56545B] bg-gradient-to-t from-red-800 to-transparent"
+          >
+            <div
+              class="absolute inset-0 bg-gradient-to-t from-black/30 rounded-2xl to-transparent"
+            ></div>
+            <div class="flex w-full justify-between">
+              <div
+                class="w-full h-fit flex flex-col justify-between items-start gap-4 z-10"
+              >
+                <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+
+                <div class="flex gap-3 items-center justify-between">
+                  <img
+                    class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                    src="./assets/images/userprofile3.png"
+                    alt=""
+                  />
+                  <div class="flex flex-col gap-1">
+                    <h1 class="text-[#FFFFFF] font-semibold text-lg sm:text-xl">
+                      Henry Foster
+                    </h1>
+                    <p class="text-[#FFFFFF] Int text-sm">Project Manager</p>
+                  </div>
+                </div>
+              </div>
+              <img class="w-8 mt-2" src="./assets/svgs/google.svg" alt="" />
+            </div>
+          </div>
+          <!-- review3 -->
+          <div
+            class="review1 w-full sm:w-[30%] 2xl:w-[27%] rounded-2xl flex flex-col items-center justify-between px-5 py-6 gap-2 sm:gap-3 2xl:gap-5 border border-[#56545B]"
+          >
+            <div class="w-full h-fit flex flex-col items-start gap-4">
+              <img class="w-28" src="./assets/svgs/rating.svg" alt="" />
+              <img class="w-7" src="./assets/svgs/google.svg" alt="" />
+            </div>
+            <p class="w-full h-fit text-xs sm:text-base Int text-[#020101]">
+              The marketing campaign they created for us was outstanding, and we
+              saw significant engagement. However, I wish they had provided more
+              frequent updates during the process. Overall, great work! Highly
+              recommended!
+            </p>
+            <div
+              class="w-full h-fit flex flex-col justify-between items-start gap-2"
+            >
+              <h1 class="font-semibold text-lg sm:text-xl text-[#020101]">
+                Nathan Scott
+              </h1>
+              <p class="text-[#7C7C7C] Int text-sm">CEO, Scott Enterprises</p>
+              <img
+                class="w-8 sm:w-12 h-8 sm:h-12 rounded-full"
+                src="./assets/images/userprofile2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- FOOTER -->
+      <div id="footer" class="w-full min-h-screen relative">
+        <!-- Gradeint Image for footer Lenght -->
+        <img
+          src="./assets/images/gradientFooter.png"
+          alt=""
+          class="w-full relative max-sm:hidden"
+        />
+        <img
+          src="./assets/images/footerGradeintMobile.png"
+          alt=""
+          class="w-full relative sm:hidden"
+        />
+        <!-- Big Line on footer -->
+        <img
+          src="./assets/images/footerBigLine.png"
+          alt=""
+          class="footerBigLine w-full absolute top-0 left-0 max-sm:hidden"
+        />
+        <img
+          src="./assets/images/footerBigLineMobile.png"
+          alt=""
+          class="footerBigLine w-full absolute top-0 left-0 sm:hidden"
+        />
+        <!-- Footer Tree Image -->
+        <img
+          src="./assets/images/footerTree.png"
+          alt=""
+          class="footerTreeImage w-full absolute bottom-0 left-0 max-sm:hidden"
+        />
+        <img
+          src="./assets/images/footerTreeMobile.png"
+          alt=""
+          class="footerTreeImage w-full absolute bottom-0 left-0 sm:hidden"
+        />
+        <!-- Content On Top -->
+        <div
+          class="w-full h-full absolute top-0 left-0 flex flex-col justify-between px-4 sm:px-28 pb-4 sm:pb-12"
+        >
+          <div
+            class="flex max-sm:flex-col justify-start sm:justify-between items-center sm:items-end max-sm:gap-10"
+          >
+            <div
+              class="w-full sm:w-1/2 sm:p-2 flex flex-col text-[#020101] gap-6 sm:gap-10 max-sm:items-center"
+            >
+              <img
+                src="./assets/images/logo.png"
+                alt=""
+                class="footerLogo w-28 sm:w-72"
+              />
+              <h2
+                style="line-height: 1.1"
+                class="footerHeading text-2xl xs:text-3xl sm:text-6xl font-semibold w-[80%] max-sm:text-center"
+              >
+                Serving Martinez, Concord, and Beyond
+              </h2>
+              <p class="footerPara max-sm:text-sm w-[85%] max-sm:text-center">
+                We travel up to 100 miles to serve our community. Whether it's a
+                Sunday afternoon or a midnight emergency, I. Tomas Tree Services
+                is just a phone call away.
+              </p>
+              <div class="flex flex-col max-sm:items-center gap-3 sm:gap-6">
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerCall.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">925-497-5533</p>
+                </div>
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerEmail.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">agctomas@gmail.com</p>
+                </div>
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerClock.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">Monday to Sunday – 24/7</p>
+                </div>
+                <div class="footerInfo flex gap-2 items-center text-lg">
+                  <img
+                    src="./assets/svgs/footerTick.svg"
+                    alt=""
+                    class="w-5 sm:w-7"
+                  />
+                  <p class="max-sm:text-sm">Free Estimates Available</p>
+                </div>
+              </div>
+            </div>
+            <div class="w-full sm:w-1/2 sm:p-2 flex justify-center">
+              <form
+                action=""
+                class="w-full sm:w-[80%] backdrop-blur-sm bg-black/80 rounded-3xl py-6 sm:py-16 px-4 sm:px-8 flex flex-col text-xs xs:text-sm gap-2 xs:gap-4 items-center"
+              >
+                <h2
+                  class="footerFormHeading w-[70%] sm:w-[60%] text-center text-lg xs:text-2xl sm:text-3xl text-white"
+                >
+                  Get Your
+                  <span class="font-bold text-[#1DF8DC]"
+                    >Free Estimate Today!</span
+                  >
+                </h2>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="name" class="text-[#ffffff]"> Full Name </label>
+                  <input
+                    type="text"
+                    name="name"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                  />
+                </div>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="name" class="text-[#ffffff]">
+                    Phone Number
+                  </label>
+                  <input
+                    type="text"
+                    name="number"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                  />
+                </div>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="name" class="text-[#ffffff]"> Email </label>
+                  <input
+                    type="email"
+                    name="email"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none"
+                  />
+                </div>
+                <div class="formInputField flex flex-col xs:gap-1 w-full">
+                  <label for="message" class="text-[#ffffff]"> Message </label>
+                  <textarea
+                    name="message"
+                    rows="4"
+                    class="py-2 px-2 border-b-4 border-[#ffffff] bg-transparent text-[#ffffff] outline-none resize-none"
+                  ></textarea>
+                </div>
+                <div class="footerFormBtn">
+                  <button
+                    class="px-6 py-4 mt-4 font-bold max-sm:text-sm text-[#031322] rounded-xl bg-gradient-to-r from-[#3A978C] to-[#1DF8DC] transition-all duration-200 ease-out hover:-translate-y-2 hover:shadow-[0_10px_35px_rgba(29,248,220,0.45),0_0_25px_rgba(58,151,140,0.6)] active:translate-y-0"
+                  >
+                    Request a Free Quote
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div
+            class="footerBottomDiv  w-full rounded-3xl py-4 sm:py-8 px-2 sm:px-5 bg-black/20 sm:bg-[#FFFFFF1A] backdrop-blur-lg flex justify-between text-xs text-white font-light max-sm:flex-col max-sm:text-center max-sm:items-center max-sm:gap-3"
+          >
+            <p>Privacy Policy &nbsp; | &nbsp; Your Privacy Choices</p>
+            <p>© 2025 I. TOMAS TREE SERVICE . All rights Reserved.</p>
+            <div class="flex gap-2 sm:gap-10 justify-center sm:justify-end">
+              <span>Web Design</span>
+              <a href="https://brandedstrong.com/"> By Branded Strong </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="max-sm:hidden absolute top-[2%] right-12 flex flex flex-col items-center gap-4"
+        >
+          <a href="https://www.facebook.com/" class="footersocialCircleBall">
+            <div
+              class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+            >
+              <img src="./assets/svgs/homeFb.svg" alt="" />
+            </div>
+          </a>
+          <a href="https://www.instagram.com/" class="footersocialCircleBall">
+            <div
+              class="w-16 h-16 flex justify-center items-center p-5 border border-[#031322] rounded-full shrink-0 transition ease-in-out duration-150 hover:rotate-[360deg] hover:bg-[#00D09A] cursor-pointer hover:border-none"
+            >
+              <img src="./assets/svgs/homeInsta.svg" alt="" />
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="./index.js"></script>
+    <script src="./homeAnimation.js"></script>
+  </body>
+</html>
